@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Botao() {
+export default function Button(props) {
     return (
         <div className="button">
-            <p> {this.props.valor} </p>
+            <p> {props.value} </p>
         </div>
     )
 }

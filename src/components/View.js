@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function View() {
+export default function View(props) {
     return (
         <div id="view">
-            <h1>Zero = 0</h1>
+            <h1>{props.value}</h1>
         </div>
     )
 }
