@@ -23,7 +23,11 @@ export default class Calculator extends React.Component {
         return (
             <div id="calculator">
             <View value={this.state.displayValue}/>
-            <Keyboard />
+            <Keyboard memoryValue={this.state.lastResult}
+                     lastOperation={this.state.operations} 
+                     displayValue ={this.state.displayValue} 
+                     clearToNextOperation={this.state.clearView}
+                     decimalEntryMode={this.state.decimalEntryMode}/>
         </div>
         )
     }

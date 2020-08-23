@@ -11,6 +11,7 @@ let store = {
     decimalEntryMode: false,
 }
 
+window.dbg = store;
 class CalculatorStore extends EventEmmiter {
 
     getDisplayValue() {

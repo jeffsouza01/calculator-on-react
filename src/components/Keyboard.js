@@ -1,29 +1,54 @@
 import React from 'react';
 import Button from './Button';
 
-export default function Keyboard() {
+export default class Keyboard extends React.Component{
+    constructor(props){
+        super(props)
+    }
+
+    render(){
     return (
         <div id="keyboard">
-            <Button value="c"/>
-                <Button value="+/-"/>
-                <Button value="%"/>
-                <Button value="/"/>
-                <Button value="7"/>
-                <Button value="8"/>
-                <Button value="9"/>
-                <Button value="*"/>
-                <Button value="4"/>
-                <Button value="5"/>
-                <Button value="6"/>
-                <Button value="+"/>
-                <Button value="4"/>
-                <Button value="5"/>
-                <Button value="6"/>
-                <Button value="-"/>
-                <Button value="0"/>
-                <Button value="."/>
-                <Button value="pi"/>
-                <Button value="="/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="c"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="+/-"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="%"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="/"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="7"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="8"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="9"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="*"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="4"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="5"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="6"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="+"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="1"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="2"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="3"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="-"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="0"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="."/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="pi"/>
+            <Button memoryValue={this.props.memoryValue} lastOperation={this.props.operations} displayValue={this.props.displayValue} clearToNextOperation={this.props.clearView}
+                       decimalEntryMode={this.props.decimalEntryMode} value="="/>
         </div>
     )
-}
+}}
